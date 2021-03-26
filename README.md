@@ -18,7 +18,7 @@ You can get your own fork/copy of this repo by using the <b>Fork</b> button pres
 You need to clone (download) it to local machine using
 
 ```sh
-$ git clone https://github.com/<Your_Github_Username>/UniVendor.git
+$ git clone https://github.com/<Your_Github_Username>/CPP.git
 ```
 
 ### :metal: Create a new branch
