@@ -18,13 +18,18 @@ void sort012(int a[], int arr_size)
 		switch (a[mid]) {
 
 		case 0:
-			swap(a[lo++], a[mid--]);
+			if (a[mid] == a[lo] && mid != 0)
+				lo++;
+			swap(a[lo++], a[mid++]);
 			break;
 		case 1:
+			mid++;
 			break;
 
 		case 2:
-			swap(a[mid++], a[hi--]);
+			if (a[mid] == a[hi])
+				hi--;
+			swap(a[mid], a[hi--]);
 			break;
 		}
 	}
