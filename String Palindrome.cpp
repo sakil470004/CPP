@@ -12,9 +12,9 @@ int main()
 
         length = strlen(str);    
 
-        for(i=0;i <= length ;i++)
+        for(i=0;i < (length+1)/2 ;i++)
         {
-                if(str[i] != str[length-i])
+                if(str[i] != str[length-i-1])
                 {
                         flag = 1;
                         break;
