@@ -15,7 +15,7 @@ void SieveOfEratosthenes(int n)
 		if (prime[p] == true)
 		{
 
-			for (int i = p * p; i < n; i ++)
+			for (int i = p * p; i <= n; i +=p)
 				prime[i] = false;
 		}
 	}
